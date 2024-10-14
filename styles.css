@@ -1,8 +1,57 @@
 body {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    font-size: 18px;
+    margin: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+        margin: 10px;
+    }
+    .container {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .menu {
+        display: block;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 header {
@@ -14,7 +63,7 @@ header {
 
 nav {
     background-color: #2fd619;
-   
+
 }
 
 nav ul {
@@ -42,6 +91,7 @@ nav ul li a:hover {
 
 .contenedor-flex {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: rgb(0, 212, 195);
     border: 1px solid rgb(136, 228, 136);
@@ -49,6 +99,7 @@ nav ul li a:hover {
 }
 
 .item-flex {
+    flex: 1 1 200px;
     background-color: aquamarine;
     border: 1px solid black;
     padding: 10px;
@@ -102,7 +153,7 @@ nav ul li a:hover {
     padding: 70px;
     height: 200px;
     width: 50px;
-    
+
 }
 
 .block2:hover {
