@@ -1,0 +1,121 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #02b6ad;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #2fd619;
+   
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    padding: 14px 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #37ff91;
+    color: black;
+}
+
+.contenedor-flex {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 212, 195);
+    border: 1px solid rgb(136, 228, 136);
+    padding: 10px;
+}
+
+.item-flex {
+    background-color: aquamarine;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 250px);
+    gap: 10px;
+    background-color: rgb(241, 243, 118);
+    padding: 15px;
+    border: 1px solid orangered;
+    justify-content: space-between;
+}
+
+.contenedor-grid2 {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(2, 250px);
+    gap: 10px;
+    background-color: rgb(241, 243, 118);
+    padding: 15px;
+    border: 1px solid orangered;
+    justify-content: space-between;
+}
+
+.item-grid:hover {
+    border: #4fd6ee;
+    text-align: center;
+    background-color: rgb(224, 215, 85);
+    border: 3px solid black;
+    transform: scale(1.1);
+}
+
+.item-grid2:hover {
+    text-align: center;
+    background-color: rgb(224, 215, 85);
+    border: 3px solid black;
+    opacity: 0.8;
+    transition: opacity 1s ease;
+}
+
+.block {
+    justify-content: center;
+    text-align: center;
+    display: block;
+    background-color: chocolate;
+    border: 3px solid black;
+    margin: 5px;
+    padding: 70px;
+    height: 200px;
+    width: 50px;
+    
+}
+
+.block2:hover {
+    opacity: 0.7;
+    transition: opacity 0.5s ease;
+}
+
+footer {
+    background-color: #3675fc;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
